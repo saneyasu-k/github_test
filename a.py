@@ -1,5 +1,8 @@
 from time import sleep
-
-for _ in range(20):
+i= 0
+A= 0.05-(i*0.01)
+for i in range(20):
     print("加速")
-    sleep(0.05)
+    sleep(A)
+    if A ==0:
+        A= 0.0001
